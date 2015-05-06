@@ -118,20 +118,18 @@
         } else {
             var today = new Date();
         }
-        var day = today.getDay(); // Sunday is 0, Monday is 1, ... Saturday is 6
-        var dd = today.getDate();
-        var mm = today.getMonth() + 1; // January is 0!
-        var yyyy = today.getFullYear();
+
         var intro = 'Days since last UKIP suspension';
         var counter = "";
         var info = "";
 
-        console.log(last_suspension_date);
         diff = Math.abs(today-last_suspension_date); // milliseconds
-        console.log(last_suspension_date);
         counter = Math.floor(diff / (1000 * 60 * 60 * 24)); // whole days
 
         // Format like 4th June 2014
+        var dd = last_suspension_date.getDate();
+        var mm = last_suspension_date.getMonth() + 1; // January is 0!
+        var yyyy = last_suspension_date.getFullYear();
         var m_names = ["January", "February", "March",
                 "April", "May", "June", "July", "August", "September",
                 "October", "November", "December"];
