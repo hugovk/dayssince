@@ -12,7 +12,7 @@
     <![endif]-->
 
     <style type="text/css">
-        .intro, .reason, .other_reason {
+        .intro, .counter, .info {
             font-family: sans-serif;
             font-weight: bold;
             text-align: center;
@@ -123,13 +123,13 @@
         var mm = today.getMonth() + 1; // January is 0!
         var yyyy = today.getFullYear();
         var intro = 'Days since last UKIP suspension';
-        var reason = "";
-        var other_reason = "";
+        var counter = "";
+        var info = "";
 
         console.log(last_suspension_date);
         diff = Math.abs(today-last_suspension_date); // milliseconds
         console.log(last_suspension_date);
-        reason = Math.floor(diff / (1000 * 60 * 60 * 24)); // whole days
+        counter = Math.floor(diff / (1000 * 60 * 60 * 24)); // whole days
 
         // Format like 4th June 2014
         var m_names = ["January", "February", "March",
@@ -147,17 +147,17 @@
         }
         var date_format = dd + "" + suffix + " " + m_names[mm - 1] + " " + yyyy;
 
-        other_reason = "<P>Last suspension: " + date_format + "<br><a href=" + last_suspension_url + ">More info</a>";
+        info = "<P>Last suspension: " + date_format + "<br><a href=" + last_suspension_url + ">More info</a>";
 
 
 $(document).ready(function() {
     $('#intro').html(intro);
-    $('#reason').html(reason);
-    $('#other_reason').html(other_reason);
+    $('#counter').html(counter);
+    $('#info').html(info);
     $('#date').html(date_format);
     var htmlElement = document.querySelector("html");
     htmlElement.style.backgroundImage = 'url(flag.jpg)';
-    $("#reason").addClass("outline");
+    $("#counter").addClass("outline");
     $(".reason-container").css({"bottom": "0"});
     $('#reason-container').textfill({ maxFontPixels: 0 });
 });
@@ -192,14 +192,14 @@ $(window).resize(function() {
         <div id="intro" class="intro"></div>
     </H2>
     <H1>
-        <div id="reason-container"><span id="reason" class="reason"></span></div>
+        <div id="reason-container"><span id="counter" class="counter"></span></div>
     </H1>
 
 </div>
 
 <footer class="site-footer"><P>&nbsp;</P>
 
-    <div id="other_reason" class="other_reason"></div>
+    <div id="info" class="info"></div>
 </footer>
 </body>
 </html>
