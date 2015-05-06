@@ -59,9 +59,6 @@
             $('#counter').html(counter);
             $('#info').html(info);
             $('#date').html(date_format);
-            var htmlElement = document.querySelector("html");
-            htmlElement.style.backgroundImage = 'url(flag.jpg)';
-            $("#counter").addClass("outline");
             $(".reason-container").css({"bottom": "0"});
             $('#reason-container').textfill({ maxFontPixels: 0 });
         });
@@ -87,7 +84,8 @@
             text-align: center;
         }
 
-        body {
+        body,
+        .info a {
             background-color: #FEDF00;
             color: #70147A;
         }
@@ -157,7 +155,7 @@
 
     <div class="github-fork-ribbon-wrapper right">
         <div class="github-fork-ribbon">
-            <a href="https://github.com/hugovk/dayssincelastukipsuspension">Fork me on GitHub</a>
+            <a href="https://github.com/hugovk/dayssincelastukipsuspension">Edit me on GitHub</a>
         </div>
     </div>
 
@@ -165,7 +163,7 @@
         <div id="intro" class="intro"></div>
     </H2>
     <H1>
-        <div id="reason-container"><span id="counter" class="counter"></span></div>
+        <div id="reason-container"><span id="counter" class="counter outline"></span></div>
     </H1>
 
 </div>
