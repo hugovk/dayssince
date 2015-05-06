@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="favicon.ico" rel="icon" type="image/x-icon"/>
+    <title>
+        Days since last UKIP suspension
+    </title>
+
+    <link rel="stylesheet" href="https://simonwhitaker.github.io/github-fork-ribbon-css/gh-fork-ribbon.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="https://simonwhitaker.github.io/github-fork-ribbon-css/gh-fork-ribbon.ie.css">
+    <![endif]-->
+
+    <style type="text/css">
+        .intro, .reason, .other_reason {
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        body {
+            background-color: #FEDF00;
+            color: #70147A;
+        }
+
+        .intro {
+            padding-top: 5px;
+        }
+
+        .outline {
+            text-shadow:
+                -2px -2px 0 black,
+                2px -2px 0 black,
+                -2px 2px 0 black,
+                2px 2px 0 black;
+        }
+
+        #reason-container {
+          padding: 5px;
+          position: absolute;
+          top: 48px;
+          bottom: 60px;
+          left: 0;
+          right: 0;
+          text-align: center;
+        }
+
+        /* Sticky footer */
+        * {
+            margin: 0;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        .page-wrap {
+            min-height: 100%;
+            /* equal to footer height */
+            margin-bottom: -60px;
+        }
+
+        .page-wrap:after {
+            content: "";
+            display: block;
+        }
+
+        .site-footer, .page-wrap:after {
+            /* .push must be the same height as footer */
+            height: 60px;
+        }
+
+        .site-footer {
+        }
+
+        /* Background image */
+        html {
+            background: no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .github-fork-ribbon {
+            background-color: #70147A;
+        }
+        .github-fork-ribbon a {
+            color: #FEDF00;
+        }
+        .github-fork-ribbon a:hover {
+            color: #FEDF00;
+        }
+
+        .twitter-button {
+            top: 5px;
+            left: 5px;
+            position: absolute;
+        }
+    </style>
+
+    <script src='jquery-1.11.2.min.js'></script>
+    <script src="jquery.textfill.min.js"></script>
+
+    <script type="text/javascript">
+        <!--
+        var last_suspension_date = new Date("5 May 2015");
+        var last_suspension_url = "http://howmanyukipsuspensions.tumblr.com/post/118227485105/05-05-2015-ukip-candidate-robert-blay-suspended"
+
+        function getURLParameter(name) {
+            return decodeURI(
+                (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+            );
+        }
+
+        if (getURLParameter("date") !== "null") {
+            var today = new Date(getURLParameter("date"));
+        } else {
+            var today = new Date();
+        }
+        var day = today.getDay(); // Sunday is 0, Monday is 1, ... Saturday is 6
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1; // January is 0!
+        var yyyy = today.getFullYear();
+        var intro = 'Days since last UKIP suspension';
+        var reason = "";
+        var other_reason = "";
+
+        console.log(last_suspension_date);
+        diff = Math.abs(today-last_suspension_date); // milliseconds
+        console.log(last_suspension_date);
+        reason = Math.floor(diff / (1000 * 60 * 60 * 24)); // whole days
+
+        // Format like 4th June 2014
+        var m_names = ["January", "February", "March",
+                "April", "May", "June", "July", "August", "September",
+                "October", "November", "December"];
+        var suffix = "";
+        if (dd === 1 || dd === 21 || dd === 31) {
+            suffix = "st";
+        } else if (dd === 2 || dd === 22) {
+            suffix = "nd";
+        } else if (dd === 3 || dd === 23) {
+            suffix = "rd";
+        } else {
+            suffix = "th";
+        }
+        var date_format = dd + "" + suffix + " " + m_names[mm - 1] + " " + yyyy;
+
+        other_reason = "<P>Last suspension: " + date_format + "<br><a href=" + last_suspension_url + ">More info</a>";
+
+
+$(document).ready(function() {
+    $('#intro').html(intro);
+    $('#reason').html(reason);
+    $('#other_reason').html(other_reason);
+    $('#date').html(date_format);
+    var htmlElement = document.querySelector("html");
+    htmlElement.style.backgroundImage = 'url(flag.jpg)';
+    $("#reason").addClass("outline");
+    $(".reason-container").css({"bottom": "0"});
+    $('#reason-container').textfill({ maxFontPixels: 0 });
+});
+
+$(window).resize(function() {
+  $('#reason-container').textfill( {maxFontPixels: 0} );
+});
+
+        -->
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2827121-10', 'auto');
+  ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+<div class="page-wrap">
+
+    <div class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+            <a href="https://github.com/hugovk/dayssincelastukipsuspension">Fork me on GitHub</a>
+        </div>
+    </div>
+
+    <H2>
+        <div id="intro" class="intro"></div>
+    </H2>
+    <H1>
+        <div id="reason-container"><span id="reason" class="reason"></span></div>
+    </H1>
+
+</div>
+
+<footer class="site-footer"><P>&nbsp;</P>
+
+    <div id="other_reason" class="other_reason"></div>
+</footer>
+</body>
+</html>
