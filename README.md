@@ -1,6 +1,6 @@
 # Days since last UKIP suspension
 
-[Find out here!](https://hugovk.github.io/dayssincelastukipsuspension/)
+[**Find out here!**](https://hugovk.github.io/dayssincelastukipsuspension/)
 
 Has another UKIP been suspended? Here's how to update the counter.
 
