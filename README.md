@@ -4,19 +4,17 @@
 
 Has another UKIP been suspended? Here's how to update the counter.
 
-1. [Click here to edit index.html](https://github.com/hugovk/dayssincelastukipsuspension/edit/gh-pages/index.html)
+1. [Click here to edit data.js](https://github.com/hugovk/dayssincelastukipsuspension/edit/gh-pages/data.js)
 
-2. Scroll to find two lines like this:
+3. Change the date and URL and click "Propose file change":
+  ```javascript
+var last_suspension_date = new Date("23 March 2016");
+var last_suspension_url = "http://www.pinknews.co.uk/2016/03/23/ukips-suzanne-evans-suspended-for-criticising-gay-cure-candidate";
   ```
-  var last_suspension_date = new Date("5 May 2015");
-  var last_suspension_url = "http://howmanyukipsuspensions.tumblr.com/post/118227485105/05-05-2015-ukip-candidate-robert-blay-suspended"
-  ```
 
-3. Change the date and URL and click "Propose file change"
+3. Click "Create pull request" once, and a second time
 
-4. Click "Create pull request" once, and a second time
-
-5. Done!
+4. Done!
 
 Or:
 
