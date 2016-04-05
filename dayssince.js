@@ -10,13 +10,13 @@ if (getURLParameter("date") !== "null") {
   var today = new Date();
 }
 
-diff = Math.abs(today-last_suspension_date); // milliseconds
+diff = Math.abs(today-last_date); // milliseconds
 var counter = Math.floor(diff / (1000 * 60 * 60 * 24)); // whole days
 
 // Format like 4th June 2014
-var dd = last_suspension_date.getDate();
-var mm = last_suspension_date.getMonth() + 1; // January is 0!
-var yyyy = last_suspension_date.getFullYear();
+var dd = last_date.getDate();
+var mm = last_date.getMonth() + 1; // January is 0!
+var yyyy = last_date.getFullYear();
 var m_names = ["January", "February", "March",
   "April", "May", "June", "July", "August", "September",
   "October", "November", "December"];
@@ -32,7 +32,7 @@ if (dd === 1 || dd === 21 || dd === 31) {
 }
 var date_format = dd + "" + suffix + " " + m_names[mm - 1] + " " + yyyy;
 
-var info = "<P>Last suspension: " + date_format + "<br><a href=" + last_suspension_url + ">More info</a>";
+var info = "<P>" + footer + " " + date_format + "<br><a href=" + last_url + ">More info</a>";
 
 $(document).ready(function() {
   $('#intro').html(intro);

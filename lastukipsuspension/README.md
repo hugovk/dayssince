@@ -8,8 +8,8 @@ Has another UKIP been suspended? Here's how to update the counter.
 
 2. Change the date and URL and click "Propose file change":
   ```javascript
-var last_suspension_date = new Date("23 March 2016");
-var last_suspension_url = "http://www.pinknews.co.uk/2016/03/23/ukips-suzanne-evans-suspended-for-criticising-gay-cure-candidate";
+var last_date = new Date("23 March 2016");
+var last_url = "http://www.pinknews.co.uk/2016/03/23/ukips-suzanne-evans-suspended-for-criticising-gay-cure-candidate";
   ```
 
 3. Click "Create pull request" once, and a second time

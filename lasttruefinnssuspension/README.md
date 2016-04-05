@@ -8,8 +8,8 @@ Has another True Finn been suspended? Here's how to update the counter.
 
 2. Change the date and URL and click "Propose file change":
   ```javascript
-var last_suspension_date = new Date("23 October 2015");
-var last_suspension_url = "http://yle.fi/uutiset/finns_party_expels_vice_chair_tynkkynen_soini_denies_witch_hunt/8407678";
+var last_date = new Date("23 October 2015");
+var last_url = "http://yle.fi/uutiset/finns_party_expels_vice_chair_tynkkynen_soini_denies_witch_hunt/8407678";
   ```
 
 3. Click "Create pull request" once, and a second time
