@@ -1,2 +1,2 @@
-var last_suspension_date = new Date("23 October 2015");
-var last_suspension_url = "http://yle.fi/uutiset/finns_party_expels_vice_chair_tynkkynen_soini_denies_witch_hunt/8407678";
+var last_suspension_date = new Date("3 April 2016");
+var last_suspension_url = "http://yle.fi/uutiset/mondays_papers_panama_papers_local_finns_party_vice_chair_sacked_world_champ_dreams_knocked_out/8785280";
