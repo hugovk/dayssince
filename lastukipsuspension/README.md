@@ -1,10 +1,10 @@
 # Days since last UKIP suspension
 
-[**Find out here!**](https://hugovk.github.io/dayssincelastukipsuspension/)
+[**Find out here!**](https://hugovk.github.io/dayssince/lastukipsuspension/)
 
 Has another UKIP been suspended? Here's how to update the counter.
 
-1. [Click here to edit data.js](https://github.com/hugovk/dayssincelastukipsuspension/edit/gh-pages/data.js)
+1. [Click here to edit data.js](https://github.com/hugovk/dayssince/lastukipsuspension/edit/gh-pages/data.js)
 
 2. Change the date and URL and click "Propose file change":
   ```javascript
@@ -18,4 +18,4 @@ var last_suspension_url = "http://www.pinknews.co.uk/2016/03/23/ukips-suzanne-ev
 
 Or:
 
-1. Create a new issue: https://github.com/hugovk/dayssincelastukipsuspension/issues/new
+1. Create a new issue: https://github.com/hugovk/dayssince/issues/new
