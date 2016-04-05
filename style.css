@@ -4,22 +4,8 @@
   text-align: center;
 }
 
-body,
-.info a {
-    background-color: #FEDF00;
-    color: #70147A;
-}
-
 .intro {
   padding-top: 5px;
-}
-
-.outline {
-  text-shadow:
-    -2px -2px 0 black,
-    2px -2px 0 black,
-    -2px 2px 0 black,
-    2px 2px 0 black;
 }
 
 #counter-container {
@@ -55,15 +41,4 @@ html, body {
 .site-footer, .page-wrap:after {
   /* .push must be the same height as footer */
   height: 60px;
-}
-
-.site-footer {
-}
-
-/* Ribbon */
-.github-fork-ribbon:before {
-  background-color: #70147A;
-}
-.github-fork-ribbon:after {
-  color: #FEDF00;
 }

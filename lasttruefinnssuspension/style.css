@@ -1,0 +1,21 @@
+body,
+.info a {
+  background-color: #15569C;
+  color: #FDDB50;
+}
+
+.outline {
+  text-shadow:
+  -2px -2px 0 white,
+  2px -2px 0 white,
+  -2px 2px 0 white,
+  2px 2px 0 white;
+}
+
+/* Ribbon */
+.github-fork-ribbon:before {
+  background-color: #FDDB50;
+}
+.github-fork-ribbon:after {
+  color: #15569C;
+}
