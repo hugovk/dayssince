@@ -2,7 +2,7 @@
 
 [**Find out here!**](https://hugovk.github.io/dayssince/theannouncementofarevolutionarynewbatterytechnology/)
 
-Has another UKIP been suspended? Here's how to update the counter.
+Has another revolutionary new battery technology been announced? Here's how to update the counter.
 
 1. [Click here to edit data.js](https://github.com/hugovk/dayssince/theannouncementofarevolutionarynewbatterytechnology/edit/gh-pages/data.js)
 
