@@ -1,7 +1,7 @@
 body,
 .info a {
     background-color: black;
-    color: #007891;
+    color: #bb723d;
 }
 
 .outline {
@@ -14,7 +14,7 @@ body,
 
 /* Ribbon */
 .github-fork-ribbon:before {
-  background-color: #007891;
+  background-color: #bb723d;
 }
 .github-fork-ribbon:after {
   color: black;
