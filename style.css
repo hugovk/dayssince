@@ -4,6 +4,12 @@
   text-align: center;
 }
 
+.lang {
+  font-family: sans-serif;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
 .intro {
   padding-top: 5px;
 }

@@ -1,5 +1,6 @@
 body,
-.info a {
+.info a,
+.lang a {
     background-color: #FEDF00;
     color: #70147A;
 }
