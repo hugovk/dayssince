@@ -1,2 +1,2 @@
-var last_date = new Date("14 February 2017");
-var last_url = "http://www.bbc.co.uk/news/uk-england-bristol-38971604";
+var last_date = new Date("20 May 2017");
+var last_url = "https://www.theguardian.com/politics/2017/may/20/ukip-candidate-suspended-for-sending-racist-tweets";
